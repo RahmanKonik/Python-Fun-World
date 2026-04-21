@@ -10,14 +10,24 @@
 #all variables.
 
 user_command = ""
+started = False
 
 while True:
 
     user_command= input("> ").lower()
     if user_command == "start":
-        print("Car is Started, car is going...")
+        if started:
+            print("Car is already started!.")
+        else:
+            started= True
+            print("Car is Started, car is going...")
     elif user_command == "stop":
-        print("Car is Stopped, car stopped...")
+
+        if not started:
+            print("Car is already stopped!")
+        else:
+            started = False
+            print("Car is Stopped, car stopped...")
     elif user_command == "help":
         print("""Start: to start the car...
                 Stop: to stop the car...
