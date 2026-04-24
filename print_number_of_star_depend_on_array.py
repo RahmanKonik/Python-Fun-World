@@ -8,7 +8,10 @@
 values = [5, 2, 5, 2, 2]
 
 for star in values:
-    print("x"*star)
+    output = ""
+    for value in range(star):
+        output += 'x'
+    print(output)
 
 
 print("========@@@@@=======")
