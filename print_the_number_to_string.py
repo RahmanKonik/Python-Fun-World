@@ -5,21 +5,21 @@
 
 #First python program: user input a number  and program print that number in a string.
 
-user_input_number = input("Number: ")
+user_input_number = input("Phone Number: ")
 
 # dictationary
 
 digital_number_dictationay = {
-    "0": "Zero",
-    "1": "One",
-    "2": "Two",
-    "3": "Three",
-    "4": "Four",
-    "5": "Five",
-    "6": "Six",
-    "7": "Seven",
-    "8": "Eight",
-    "9": "Nine"
+    "0": "Null",
+    "1": "Yksi",
+    "2": "kaksi",
+    "3": "Kolme",
+    "4": "Neljä",
+    "5": "Viisi",
+    "6": "Kuusi",
+    "7": "Seitsemän",
+    "8": "Kahdeksan",
+    "9": "Yhdeksän"
 }
 
 # storing the number in a variable.
@@ -30,7 +30,7 @@ output_digit = ""
 
 for charactor in user_input_number:
     output_digit += digital_number_dictationay.get(charactor, "!") + " "
-print(f"String Number is : {output_digit}")
+print(f"String Number is : + {output_digit}")
 
 print("========@@@@@=======")
 print("     Konik Rahman")
