@@ -18,7 +18,17 @@ words = user_message.split()
 
 emojiDict = {
     ":(": "🥲",
-    ":)": "😊"
+    ":)": "😊",
+    ":D": "😄",
+    ":P": "😛",
+    ";)": "😉",
+# cool & fun emoji
+     "B)": "😎",
+    "8-)": "😎",
+    "XD": "😂",
+    "xD": "😂",
+    ":O": "😮",
+    ":-O": "😮"
 }
 output = " "
 for word in words:
