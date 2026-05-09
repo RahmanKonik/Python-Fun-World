@@ -14,17 +14,20 @@ class Car:
     def stop(self):
         print("Car Stopped")
     def  gear(self, speed):
-        if speed <= 20:
+        if speed <= 10:
             print("Gear 1")
-        elif speed <= 40:
+        elif speed <= 20:
             print("Gear 2")
-        else:
+        elif speed <= 30:
             print("Gear 3")
+        else:
+            print("Gear 4")
 
 my_car = Car()
 
 my_car.start()
-my_car.gear(20)
+speed = int(input("Enter a value of Speed: "))
+my_car.gear(speed)
 my_car.stop()
 
 
