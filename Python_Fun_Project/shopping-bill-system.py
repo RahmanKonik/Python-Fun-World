@@ -10,6 +10,7 @@
 # Python program: Shopping bill system.
 
 items = []
+count = 0
 
 while True:
     price = input("Enter the item prices ( type done ): ")
@@ -18,10 +19,11 @@ while True:
         break
 
     items.append(float(price))
+    count += 1
 
 total = sum(items)
 
-print(f"Total bill is : {total}")
+print(f"Total bill of {count} is : {total}")
 
 
 
