@@ -41,7 +41,17 @@ print(f"Bill is {count} item and price is {total}")
 
 
 
-print(f"Total bill of {count} is : {total}")
+print(f"Total items: {count}")
+
+# discount.
+
+discount = float(input("Enter the discount % ( or 0 if no discount): "))
+
+final_bill = total - (total * discount / 100)
+
+print(f"Total bill before discount: {total}")
+print(f"Final amount to pay: {final_bill}")
+print("Thank you for your shopping...")
 
 
 
