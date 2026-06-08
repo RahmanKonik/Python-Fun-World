@@ -33,19 +33,31 @@ class School:
         for student in self.students:
             student.show_student()
             print()
-
+    def remove_one_student(self, name):
+        for student in self.students:
+           if student.name == name:
+               self.students.remove(student)
+               print(f"{name} removed successfully")
+               return
+        print(f"{name} Not found this name.")
 
 student1 = Student("Rahman", 26, "B")
 student2 = Student("Alice", 27 ,"B")
+student3 = Student("Konik", 29, "A")
 
 school = School()
 
 school.add_student(student1)
 school.add_student(student2)
+school.add_student(student3)
 
 #student1.show_student()
 #student1.update_grade("A")
 #student1.show_student()
+
+school.show_all_students()
+
+school.remove_one_student("Konik")
 
 school.show_all_students()
 
